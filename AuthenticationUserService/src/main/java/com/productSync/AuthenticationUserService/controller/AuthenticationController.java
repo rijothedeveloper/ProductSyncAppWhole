@@ -25,6 +25,7 @@ public class AuthenticationController {
     }
 
     @PostMapping("/signup")
+    @CrossOrigin
     public ResponseEntity<SignupResponse> signup(@RequestBody SignupRequest signupRequest) {
 //        return ResponseEntity.ok(authenticationService.signup(signupRequest));
         return new ResponseEntity<>(authenticationService.signup(signupRequest), HttpStatus.CREATED);
