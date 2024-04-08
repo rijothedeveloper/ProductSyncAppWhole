@@ -28,6 +28,6 @@ jobs:
         with:
           java-version: 17
       - name: Build with maven
-        run: ./mvnw install -DskipTests
+        run: AuthenticationUserService/./mvnw install -DskipTests
       - name: Run tests
-        run: ./mvnw test
+        run: AuthenticationUserService/./mvnw test
